@@ -5,6 +5,7 @@ from distutils.core import setup
 templates = ['*.html','*.htm','*.xml','*.zpt','*.zpts']
 images = ['*.gif','*.png','*.jpg','*.jpeg','*.js','*.htc']
 styles = ['*.css']
+js = ['*.js']
 
 setup(name="plasTeX",
       description="LaTeX document processing framework",
@@ -31,6 +32,10 @@ setup(name="plasTeX",
          'plasTeX.Renderers.XHTML.Themes.python.icons',
          'plasTeX.Renderers.XHTML.Themes.plain',
          'plasTeX.Renderers.XHTML.Themes.minimal',
+         'plasTeX.Renderers.XHTML.Themes.annotatable',
+         'plasTeX.Renderers.XHTML.Themes.annotatable.icons',
+         'plasTeX.Renderers.XHTML.Themes.annotatable.styles',
+         'plasTeX.Renderers.XHTML.Themes.annotatable.js',
          'plasTeX.Renderers.DocBook',
          'plasTeX.Renderers.DocBook.Themes.default',
          'plasTeX.Renderers.DocBook.Themes.book',
@@ -57,6 +62,9 @@ setup(name="plasTeX",
          'plasTeX.Renderers.XHTML.Themes.default': templates,
          'plasTeX.Renderers.XHTML.Themes.default.icons': images,
          'plasTeX.Renderers.XHTML.Themes.default.styles': styles,
+         'plasTeX.Renderers.XHTML.Themes.annotatable': templates,
+         'plasTeX.Renderers.XHTML.Themes.annotatable.styles': styles,
+         'plasTeX.Renderers.XHTML.Themes.annotatable.js': js,
          'plasTeX.Renderers.XHTML.Themes.python': templates+styles,
          'plasTeX.Renderers.XHTML.Themes.python.icons': images,
          'plasTeX.Renderers.XHTML.Themes.plain': templates,

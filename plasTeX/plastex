@@ -108,8 +108,8 @@ def info(type, value, tb):
 
 #sys.setrecursionlimit(10000)
 
-#main(sys.argv)
-try:
-    main(sys.argv)
-except KeyboardInterrupt:
-    pass
+main(sys.argv)
+# try:
+#     main(sys.argv)
+# except KeyboardInterrupt:
+#     pass
